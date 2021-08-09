@@ -86,7 +86,8 @@
     
     .portfolio,
     .intro,
-    .contact-me {
+    .contact-me,
+    .myresume {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -110,7 +111,8 @@
     }
     /* About me style     */
     
-    .about-intro {
+    .about-intro,
+    .resume-info {
         color: var(--prime-color);
         font-size: 1.5vw;
         text-align: left;
