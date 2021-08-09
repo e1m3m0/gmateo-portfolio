@@ -1,80 +1,208 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-:root {
-    --prime-color: #445876;
-    --second-color: #92cccd;
-    --third-color: #31343d;
-}
-
-header {
-    background-color: var(--third-color);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-}
-
-header h1 a {
-    text-decoration: none;
-    color: var(--third-color);
-    padding-bottom: 18px 18px;
-}
-
-header h1 {
-    text-decoration: none;
-    background-color: var(--second-color);
-    color: var(--third-color);
-    width: 25%;
-    text-align: center;
-    font-size: 2.5vw;
-    padding: 5px;
-}
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: var(--second-color);
-    padding: 10px 25px;
-    font-weight: bold;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-decoration: underline;
-    text-underline-offset: 30%;
-    text-decoration-thickness: 3px;
-}
-
-.hero {
-    background-image: url("../images/hero-bg.jpg");
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.hero h2 {
-    background-color: var(--second-color);
-    color: var(--third-color);
-    font-weight: bold;
-    font-size: 28px;
-    width: auto;
-    padding: 18px 18px;
-    margin: 30px 30px;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+     :root {
+        --prime-color: #445876;
+        --second-color: #92cccd;
+        --third-color: #31343d;
+    }
+    /* Header starts here */
+    
+    header {
+        background-color: var(--third-color);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    
+    header h1 a {
+        text-decoration: none;
+        color: var(--third-color);
+        padding-bottom: 18px 18px;
+    }
+    
+    header h1 {
+        text-decoration: none;
+        background-color: var(--second-color);
+        color: var(--third-color);
+        width: 25%;
+        text-align: right;
+        font-size: 2.5vw;
+        padding: 5px;
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+    
+    header nav ul li a {
+        text-decoration: none;
+        color: var(--second-color);
+        padding: 10px 10px;
+        margin: 10px;
+        font-weight: bold;
+        font-size: 2vw;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-bottom: 3px solid var(--second-color);
+        text-transform: capitalize;
+    }
+    /* Header style ends here */
+    /* Hero section */
+    
+    .hero {
+        background-image: url("../images/hero-bg.jpg");
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    
+    .hero h2 {
+        background-color: var(--second-color);
+        color: var(--third-color);
+        font-weight: bold;
+        font-size: 2.40vw;
+        width: auto;
+        padding: 18px 18px;
+        margin: 30px 30px;
+    }
+    /* Hero style ends here */
+    /* Main section setup */
+    
+    .portfolio,
+    .intro,
+    .contact-me {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        height: max-content;
+    }
+    
+    .section-title {
+        width: 20%;
+        border-right: 5px solid var(--prime-color);
+    }
+    
+    .section-title h2 {
+        color: var(--prime-color);
+        font-weight: bold;
+        text-align: right;
+        font-size: 2.4vw;
+        padding: 10px;
+        margin: 10px 10px;
+    }
+    /* About me style     */
+    
+    .about-intro {
+        color: var(--prime-color);
+        font-size: 1.5vw;
+        text-align: left;
+        line-height: 1.5;
+        height: 100%;
+        width: 77%;
+    }
+    /* My work section style*/
+    
+    .my-work {
+        height: 100%;
+        width: 77%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .my-work a {
+        border: 2px solid var(--third-color);
+        position: relative;
+        text-decoration: none;
+        opacity: .75;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 15px;
+    }
+    
+    .top-work {
+        background-image: url("../images/run-buddy.jpg");
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+    }
+    
+    .work1,
+    .work2 {
+        background-image: url("../images/workplaceholder.jpg");
+        width: 49.5%;
+        height: 200px;
+        background-size: cover;
+    }
+    
+    .my-work h3 {
+        color: var(--third-color);
+        font-size: 1.7vw;
+        font-weight: bold;
+    }
+    
+    .my-work h4 {
+        color: var(--third-color);
+        font-size: 1vw;
+        font-weight: lighter;
+    }
+    
+    .top-work:hover,
+    .work1:hover,
+    .work2:hover {
+        opacity: 1.0;
+    }
+    
+    .work-info {
+        background-color: var(--second-color);
+        color: var(--third-color);
+        font-weight: bold;
+        width: 200px;
+        padding: 10px;
+    }
+    /* Contact me style */
+    
+    .contact-info {
+        width: 77%;
+        padding-top: 20px;
+    }
+    
+    .contact-info ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        width: 100%;
+    }
+    
+    .contact-info ul li a {
+        text-decoration: none;
+        color: var(--prime-color);
+        padding: 10px 20px;
+        font-weight: bold;
+        font-size: 2vw;
+        border-bottom: 3px solid var(--prime-color);
+    }
