@@ -147,8 +147,13 @@ header nav ul li a {
   justify-content: flex-end;
   padding-bottom: 15px;
 }
-
-.top-work {
+.top-work1 {
+  background-image: url("https://user-images.githubusercontent.com/79805880/140585276-8ac82348-0e75-4f44-b14b-4708264c3de7.png");
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+}
+.top-work2 {
   background-image: url("../images/anytime-books.png");
   width: 100%;
   height: 200px;
